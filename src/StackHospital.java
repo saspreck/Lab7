@@ -2,7 +2,7 @@ import java.util.Stack;
 
 /**
  * Child class of Hospital.java that uses a stack to keep track of patients. 
- * A stack organizes data by LIFO, last in, first out.
+ * A stack organizes data by LIFO, last in first out.
  * @author skylersprecker
  * @version 2019-03-11
  * @param <PatientType>
@@ -64,6 +64,11 @@ public class StackHospital<PatientType> extends Hospital<PatientType> {
 		return "StackHospital";
 	}
 	
+	/**
+	 * Implements allPatientInfo method defined in Hospital class
+	 * 
+	 * @return A string with all of the patients' info
+	 */
 	public String allPatientInfo() {
 		return patients.toString();
 	}
