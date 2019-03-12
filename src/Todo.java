@@ -20,6 +20,8 @@ Tasks:
 13. complete QueueHospital hospitalType method
 14. complete QueueHospital allPatientInfo method
 15. complete PriorityQueueHospital methods 
+16. complete SickPerson constructor
+17. complete SickPerson compareToImpl method
 
 Estimated Time (minutes):
 1.  5
@@ -37,6 +39,8 @@ Estimated Time (minutes):
 13. 2
 14. 1
 15. 10
+16. 5
+17. 10
 
 Actual Time (minutes):
 1.  5
@@ -54,5 +58,7 @@ Actual Time (minutes):
 13. 1
 14. 1
 15. 7
+16. 7
+17. 15
 
 */}
