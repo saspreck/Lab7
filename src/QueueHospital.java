@@ -14,7 +14,7 @@ public class QueueHospital<PatientType> extends Hospital<PatientType> {
 		private Queue<PatientType> patients;
 		
 		/**
-		 * Constructs a QueueHospital object and initializes a stack
+		 * Constructs a QueueHospital object and initializes a queue
 		 */
 		public QueueHospital() {
 			patients = new LinkedList<PatientType>();

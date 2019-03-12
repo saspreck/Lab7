@@ -25,7 +25,7 @@ public class SickPerson extends Person{
 	/**
 	 * Method to compare the severity of two different patients condition's
 	 * 
-	 * @param p
+	 * @param p		The person being compared to
 	 */
 	protected int compareToImpl(Person p) {
 		if(!(p instanceof SickPerson)) {
@@ -42,8 +42,16 @@ public class SickPerson extends Person{
 		}
 	}
 	
-	//protected method to get the severity of the patient's condition
-	protected int getSeverity() {
+	//private method to get the severity of the patient's condition
+	private int getSeverity() {
 		return severity;
+	}
+	
+	/**
+	 * Method to print out patient's information
+	 */
+	@Override
+	public String toString() {
+		return super.toString();
 	}
 }

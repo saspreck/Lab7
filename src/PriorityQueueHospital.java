@@ -12,7 +12,7 @@ public class PriorityQueueHospital<PatientType extends Comparable<PatientType>> 
 		private PriorityQueue<PatientType> patients;
 		
 		/**
-		 * Constructs a PriorityQueueHospital object and initializes a stack
+		 * Constructs a PriorityQueueHospital object and initializes a PriorityQueue
 		 */
 		public PriorityQueueHospital() {
 			patients = new PriorityQueue<PatientType>();
