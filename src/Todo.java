@@ -19,6 +19,7 @@ Tasks:
 12. complete QueueHospital numPatients method
 13. complete QueueHospital hospitalType method
 14. complete QueueHospital allPatientInfo method
+15. complete PriorityQueueHospital methods 
 
 Estimated Time (minutes):
 1.  5
@@ -35,6 +36,7 @@ Estimated Time (minutes):
 12. 1
 13. 2
 14. 1
+15. 10
 
 Actual Time (minutes):
 1.  5
@@ -51,5 +53,6 @@ Actual Time (minutes):
 12. 1
 13. 1
 14. 1
+15. 7
 
 */}

@@ -10,11 +10,11 @@ import java.util.*;
  */
 public class QueueHospital<PatientType> extends Hospital<PatientType> {
 	
-	// Declares a stack to be used in the object
+	// Declares a queue to be used in the object
 		private Queue<PatientType> patients;
 		
 		/**
-		 * Constructs a StackHospital object and initializes a stack
+		 * Constructs a QueueHospital object and initializes a stack
 		 */
 		public QueueHospital() {
 			patients = new LinkedList<PatientType>();
@@ -62,7 +62,7 @@ public class QueueHospital<PatientType> extends Hospital<PatientType> {
 		 * @return The name of the class/type of hospital
 		 */
 		public String hospitalType() {
-			return "StackHospital";
+			return "QueueHospital";
 		}
 		
 		/**
