@@ -49,12 +49,18 @@ public class HospitalTest {
 		// test to see if correct hospital type is returned 
 		Assert.assertEquals("Incorrect hospital type", "StackHospital", h1.hospitalType());
 		Assert.assertEquals("Incorrect hospital type", "QueueHospital", h2.hospitalType());
-		Assert.assertEquals("Incorrct hospital type", "PriorityQueueHospital", h3.hospitalType());
+		Assert.assertEquals("Incorrect hospital type", "PriorityQueueHospital", h3.hospitalType());
 		
 		// test to see if toString is correct
-		Assert.assertEquals("Incorrect toString", "[John, a 15-year old person. In for Check-up, Jack, a 28-year old person. Severity level 4]", h1.allPatientInfo());
-		Assert.assertEquals("Incorrect toString", "[Jack, a 28-year old person. Severity level 4, Jane, a 46-year old person. In for Screening]", h2.allPatientInfo());
-		Assert.assertEquals("Incorrect toString", "[John, a 15-year old person. In for Check-up, Jack, a 28-year old person. Severity level 4]", h3.allPatientInfo());
+		Assert.assertEquals("Incorrect toString", "[John, a 15-year old. In for Check-up, Jack, a 28-year old. Severity level 4]", h1.allPatientInfo());
+		Assert.assertEquals("Incorrect toString", "[Jack, a 28-year old. Severity level 4, Jane, a 46-year old. In for Screening]", h2.allPatientInfo());
+		Assert.assertEquals("Incorrect toString", "[John, a 15-year old. In for Check-up, Jack, a 28-year old. Severity level 4]", h3.allPatientInfo());
+		
+		// test to see if hospital toString is correct
+		Assert.assertEquals("Incorrect toString", "A StackHospital-type hospital with 2 patients.", h1.toString());
+		Assert.assertEquals("Incorrect toString", "A QueueHospital-type hospital with 2 patients.", h2.toString());
+		Assert.assertEquals("Incorrect toString", "A PriorityQueueHospital-type hospital with 2 patients.", h3.toString());
+		
 	}
 	
 	@Test
@@ -109,5 +115,6 @@ public class HospitalTest {
 				Assert.assertEquals("Incorrect toString", "[A 4-year old Siamese Cat., A 6-year old Poodle.]", h2.allPatientInfo());
 				Assert.assertEquals("Incorrect toString", "[A 6-year old Poodle., A 4-year old Siamese Cat.]", h3.allPatientInfo());
 	}
+	
 
 }

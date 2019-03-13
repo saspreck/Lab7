@@ -52,6 +52,6 @@ public class SickPerson extends Person{
 	 */
 	@Override
 	public String toString() {
-		return String.format("%s, a %d-year old person. Severity level %d", this.getName(), this.getAge(), severity);
+		return String.format("%s Severity level %d", super.toString(), this.severity);
 	}
 }

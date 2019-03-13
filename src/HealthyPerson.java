@@ -47,7 +47,7 @@ public class HealthyPerson extends Person{
 	 */
 	@Override
 	public String toString() {
-		return String.format("%s, a %d-year old person. In for %s", this.getName(), this.getAge(), reason);
+		return String.format("%s In for %s", super.toString(), this.reason);
 	}
 
 }
