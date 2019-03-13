@@ -8,7 +8,7 @@ import java.util.PriorityQueue;
  * @param <PatientType>
  */
 public class PriorityQueueHospital<PatientType extends Comparable<PatientType>> extends Hospital<PatientType> {
-		// Declares a queue to be used in the object
+		// Declares a priority queue to be used in the object
 		private PriorityQueue<PatientType> patients;
 		
 		/**

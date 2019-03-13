@@ -42,8 +42,8 @@ public class SickPerson extends Person{
 		}
 	}
 	
-	//private method to get the severity of the patient's condition
-	private int getSeverity() {
+	//protected method to get the severity of the patient's condition
+	protected int getSeverity() {
 		return severity;
 	}
 	
@@ -52,6 +52,6 @@ public class SickPerson extends Person{
 	 */
 	@Override
 	public String toString() {
-		return super.toString();
+		return String.format("%s, a %d-year old person. Severity level %d", this.getName(), this.getAge(), severity);
 	}
 }

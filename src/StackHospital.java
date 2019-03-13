@@ -34,7 +34,7 @@ public class StackHospital<PatientType> extends Hospital<PatientType> {
 	 * @return The patient to be treated next
 	 */
 	public PatientType nextPatient() {
-		return patients.get(0);
+		return patients.peek();
 	}
 	
 	/**
